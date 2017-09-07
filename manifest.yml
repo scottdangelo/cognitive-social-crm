@@ -10,7 +10,7 @@ declared-services:
     plan: free
   crm-tone-analyzer:
     label: tone_analyzer
-    plan: Lite
+    plan: lite
 
 applications:
 - path: .
