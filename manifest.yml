@@ -9,7 +9,7 @@ declared-services:
     label: natural-language-understanding
     plan: free
   crm-tone-analyzer:
-    label: tone-analyzer
+    label: tone_analyzer
     plan: Lite
 
 applications:
