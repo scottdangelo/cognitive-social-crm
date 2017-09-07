@@ -16,7 +16,7 @@
     "watch:client": "(cd ./client && npm run develop)",
     "watch:server": "nodemon --watch ./server --watch ./common",
     "init": "npm install",
-    "postinstall": "path-exists client && (cd ./client && npm install) && (cd .. && npm run build:client) || echo 'client dependencies are skipped in production'",
+    "postinstall": "path-exists client && (cd ./client && npm install) && npm run build:client || echo 'client dependencies are skipped in production'",
     "develop": "concurrently \"npm run watch:client\" \"npm run watch:server\" \"sleep 20 && npm run browsersync\"; exit 0",
     "test": "jasmine",
     "setup": "node ./setup/social-crm-setup.js"
@@ -50,6 +50,7 @@
     "winston": "2.3.1"
   },
   "devDependencies": {
+    "angular-cli": "1.0.0",
     "browser-sync": "2.18.11",
     "concurrently": "3.4.0",
     "eslint": "3.17.1",
