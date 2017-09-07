@@ -22,6 +22,7 @@
     "setup": "node ./setup/social-crm-setup.js"
   },
   "dependencies": {
+    "angular-cli": "1.0.0",
     "body-parser": "1.15.2",
     "cf-deployment-tracker-client": "^0.1.3",
     "cfenv": "1.0.3",
