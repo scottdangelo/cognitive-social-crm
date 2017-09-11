@@ -78,10 +78,6 @@ module.exports = (function () {
           // Some kind of problem reading the file or parsing the JSON
           throw err
         }
-      } else {
-        let err = 'Could not read configuration file ' +
-          VCAP_LOCAL_JSON_FILE
-        throw err
       }
     }
     if (!appEnv) {
