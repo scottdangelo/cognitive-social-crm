@@ -10,7 +10,7 @@ var wslEnv = require('../utils/wsl-env')
 var CloudantInitializer = require('../utils/cloudant-initializer')
 var cloudantConfig = require('../config/cloudant-config.json')
 
-var debug = require('debug')('loopback:init-cloudant')
+var debug = require('debug')('loopback:03-init-cloudant')
 
 module.exports = function (app, cb) {
   debug('Initializing Cloudant')
