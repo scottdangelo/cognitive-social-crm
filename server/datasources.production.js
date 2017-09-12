@@ -1,6 +1,7 @@
 var datasource
 if(process.env.VCAP_SERVICES){
   var vcapServices = JSON.parse(process.env.VCAP_SERVICES)
+
   datasource = {
     url: VCAP_SERVICES.cloudantNoSQLDB.credentials.url 
   }
@@ -9,3 +10,4 @@ if(process.env.VCAP_SERVICES){
 module.exports = {
   db: datasource
 }
+
