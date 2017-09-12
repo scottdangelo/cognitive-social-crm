@@ -8,6 +8,6 @@ if(process.env.VCAP_SERVICES){
 }
 
 module.exports = {
-  analysis-db: datasource
-  conversation-state-db: datasource
+  db: datasource
+}
 
