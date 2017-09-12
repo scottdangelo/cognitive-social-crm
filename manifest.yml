@@ -27,7 +27,7 @@ applications:
   - crm-tone-analyzer
 env:
   NPM_CONFIG_LOGLEVEL: info
-  NODE_ENV: development
+  NODE_ENV: production
   CLOUDANT_ANALYSIS_DB_NAME: analysis-db
   CLOUDANT_CONVERSATION_STATE_DB_NAME: conversation-state-db
   TWITTER_CONSUMER_KEY: placeholder
