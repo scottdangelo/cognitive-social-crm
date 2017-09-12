@@ -3,7 +3,7 @@ if(process.env.VCAP_SERVICES){
   var vcapServices = JSON.parse(process.env.VCAP_SERVICES)
 
   datasource = {
-    url: vcapServices.cloudantNoSQLDB.credentials.url 
+    url: VCAP_SERVICES.cloudantNoSQLDB.credentials.url 
   }
 }
 
